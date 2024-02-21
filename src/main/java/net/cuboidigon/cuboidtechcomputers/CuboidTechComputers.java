@@ -12,6 +12,5 @@ public class CuboidTechComputers implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
 	}
 }
