@@ -17,6 +17,7 @@ public class ModItems {
     public static final Item RAW_SILICON = registerItem("raw_silicon", new Item(new FabricItemSettings()));
     public static final Item SILICON_INGOT = registerItem("silicon_ingot", new Item(new FabricItemSettings()));
     public static final Item MMD = registerItem("mmd", new mmdItem(new FabricItemSettings()));
+    public static final Item GPU = registerItem("gpu", new Item(new FabricItemSettings()));
 
     private static void  addItemsToIngredientsTab(FabricItemGroupEntries entries) {
         entries.add(SILICA);

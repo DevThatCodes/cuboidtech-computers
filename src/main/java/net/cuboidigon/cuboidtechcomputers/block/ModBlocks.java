@@ -18,6 +18,7 @@ public class ModBlocks {
         public static final Block NESILICON_ORE = registerBlock("nesilicon_ore",  new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)));
         public static final Block ENSILICON_ORE = registerBlock("ensilicon_ore",  new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)));
         public static final Block MMD_CHECKER = registerBlock("mmd_checker",  new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+        public static final Block PART_COLORER = registerBlock("part_colorer",  new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

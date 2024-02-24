@@ -3,12 +3,14 @@
   "item.cuboidtech-computers.raw_silicon": "Raw Silicon",
   "item.cuboidtech-computers.silicon_ingot": "Silicon Ingot",
   "item.cuboidtech-computers.mmd": "MMD",
+  "item.cuboidtech-computers.gpu": "GPU",
 
   "block.cuboidtech-computers.silicon_block": "Block of Silicon",
   "block.cuboidtech-computers.mmd_checker": "MMD Explorer",
   "block.cuboidtech-computers.ovsilicon_ore": "Silicon Engraved Stone",
   "block.cuboidtech-computers.nesilicon_ore": "Silicon Engraved Netherack",
   "block.cuboidtech-computers.ensilicon_ore": "Silicon Engraved Endstone",
+  "block.cuboidtech-computers.part_colorer": "Part Colorer",
 
   "message.cuboidtech-computers.mmdresultsucces": "Succesfully detected click on MMD Explorer!",
   "message.cuboidtech-computers.mmdresultfail": "Unsuccesfully detected click on MMD Explorer!",
