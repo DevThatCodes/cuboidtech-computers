@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "cuboidtech-computers:silicon_block",
+    "cuboidtech-computers:ensilicon_ore",
+    "cuboidtech-computers:nesilicon_ore",
+    "cuboidtech-computers:ovsilicon_ore"
+  ]
+}
