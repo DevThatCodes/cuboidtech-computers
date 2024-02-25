@@ -1,16 +1,24 @@
 package net.cuboidigon.cuboidtechcomputers.datagen;
 
+import net.cuboidigon.cuboidtechcomputers.CuboidTechComputers;
 import net.cuboidigon.cuboidtechcomputers.block.ModBlocks;
 import net.cuboidigon.cuboidtechcomputers.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
+import java.util.function.BiConsumer;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
+    }
+
+    private final Model PC_PART = item("generated", TextureKey.LAYER0,TextureKey.LAYER1,TextureKey.LAYER2);
+    private static Model item(String parent, TextureKey LAYER0, TextureKey LAYER1, TextureKey LAYER2) {
+        return new Model(Optional.of(new Identifier("item/" + parent)), Optional.empty(), LAYER0, LAYER1, LAYER2);
     }
 
     @Override
@@ -29,6 +37,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SILICA, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_SILICON, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILICON_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GPU, Models.GENERATED_THREE_LAYERS);
+        itemModelGenerator.register(ModItems.GPU, PC_PART.upload(new Identifier(CuboidTechComputers.MODID, "item/gpu"), TextureMap.layered(new Identifier(CuboidTechComputers.MODID, "item/gpu_connector_thing"), new Identifier(CuboidTechComputers.MODID, "item/gpu_fg"), new Identifier(CuboidTechComputers.MODID, "item/gpu_fan"))));
     }
 }
