@@ -4,6 +4,7 @@ import net.cuboidigon.cuboidtechcomputers.block.ModBlocks;
 import net.cuboidigon.cuboidtechcomputers.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -22,7 +23,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
         offerSmelting(exporter, SILICON_SMELTABLES, RecipeCategory.MISC, ModItems.SILICON_INGOT,0.7f,200,"silicon");
         offerBlasting(exporter, SILICON_SMELTABLES, RecipeCategory.MISC, ModItems.SILICON_INGOT,0.9f,100,"silicon");
         offerReversibleCompactingRecipes(exporter,RecipeCategory.BUILDING_BLOCKS,ModItems.SILICON_INGOT,RecipeCategory.DECORATIONS,ModBlocks.SILICON_BLOCK);

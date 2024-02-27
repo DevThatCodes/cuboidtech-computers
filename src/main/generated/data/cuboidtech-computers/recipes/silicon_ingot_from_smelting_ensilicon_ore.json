@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "silicon",
+  "ingredient": {
+    "item": "cuboidtech-computers:ensilicon_ore"
+  },
+  "result": "cuboidtech-computers:silicon_ingot"
+}

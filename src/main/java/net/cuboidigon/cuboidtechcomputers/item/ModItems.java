@@ -1,6 +1,8 @@
 package net.cuboidigon.cuboidtechcomputers.item;
 
 import net.cuboidigon.cuboidtechcomputers.CuboidTechComputers;
+import net.cuboidigon.cuboidtechcomputers.item.custom.ColorCard;
+import net.cuboidigon.cuboidtechcomputers.item.custom.ColorablePart;
 import net.cuboidigon.cuboidtechcomputers.item.custom.mmdItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -12,12 +14,15 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
+import java.awt.*;
+
 public class ModItems {
     public static final Item SILICA = registerItem("silica", new Item(new FabricItemSettings()));
     public static final Item RAW_SILICON = registerItem("raw_silicon", new Item(new FabricItemSettings()));
     public static final Item SILICON_INGOT = registerItem("silicon_ingot", new Item(new FabricItemSettings()));
     public static final Item MMD = registerItem("mmd", new mmdItem(new FabricItemSettings()));
-    public static final Item GPU = registerItem("gpu", new Item(new FabricItemSettings()));
+    public static final Item GPU = registerItem("gpu", new ColorablePart(new FabricItemSettings()));
+    public static final Item COLOR_CARD = registerItem("color_card", new ColorCard(new FabricItemSettings()));
 
     private static void  addItemsToIngredientsTab(FabricItemGroupEntries entries) {
         entries.add(SILICA);

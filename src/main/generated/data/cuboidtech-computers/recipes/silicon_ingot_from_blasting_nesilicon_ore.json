@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.9,
+  "group": "silicon",
+  "ingredient": {
+    "item": "cuboidtech-computers:nesilicon_ore"
+  },
+  "result": "cuboidtech-computers:silicon_ingot"
+}

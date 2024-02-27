@@ -1,6 +1,7 @@
 package net.cuboidigon.cuboidtechcomputers.block;
 
 import net.cuboidigon.cuboidtechcomputers.CuboidTechComputers;
+import net.cuboidigon.cuboidtechcomputers.block.custom.PartColorer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -18,7 +19,7 @@ public class ModBlocks {
         public static final Block NESILICON_ORE = registerBlock("nesilicon_ore",  new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)));
         public static final Block ENSILICON_ORE = registerBlock("ensilicon_ore",  new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)));
         public static final Block MMD_CHECKER = registerBlock("mmd_checker",  new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
-        public static final Block PART_COLORER = registerBlock("part_colorer",  new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+        public static final Block PART_COLORER = registerBlock("part_colorer",  new PartColorer(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
@@ -26,7 +27,7 @@ public class ModBlocks {
     }
     private static Item registerBlockItem(String name, Block block){
         return Registry.register(Registries.ITEM, new Identifier(CuboidTechComputers.MODID, name),
-            new BlockItem(block, new FabricItemSettings()));
+            new BlockItem(block, new FabricItemSettings())) ;
     }
     public static void registerModBlocks()
     {

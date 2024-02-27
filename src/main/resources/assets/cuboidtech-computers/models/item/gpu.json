@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cuboidtech-computers:item/gpu_fg",
+    "layer1": "cuboidtech-computers:item/gpu_fan",
+    "layer2": "cuboidtech-computers:item/gpu_connector_thing"
+  }
+}

@@ -20,6 +20,7 @@ public class ModItemGroups {
                 entries.add(ModItems.GPU);
                 entries.add(ModItems.SILICON_INGOT);
                 entries.add(ModItems.RAW_SILICON);
+                entries.add(ModItems.COLOR_CARD);
             })).build());
     public static final ItemGroup CTC_BLOCKS = Registry.register(Registries.ITEM_GROUP, new Identifier(CuboidTechComputers.MODID, "ctc_blocks"), FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cuboidtech-computers.ctc_blocks"))
             .icon(() -> new ItemStack(ModBlocks.SILICON_BLOCK)).entries(((displayContext, entries) -> {

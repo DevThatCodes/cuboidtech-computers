@@ -1,8 +1,10 @@
 package net.cuboidigon.cuboidtechcomputers;
 
 import net.cuboidigon.cuboidtechcomputers.block.ModBlocks;
+import net.cuboidigon.cuboidtechcomputers.block.entitiy.ModBlockEntity;
 import net.cuboidigon.cuboidtechcomputers.item.ModItemGroups;
 import net.cuboidigon.cuboidtechcomputers.item.ModItems;
+import net.cuboidigon.cuboidtechcomputers.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +20,8 @@ public class CuboidTechComputers implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModBlockEntity.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 	}
 }

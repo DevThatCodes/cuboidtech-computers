@@ -18,6 +18,7 @@ public class ModTags {
     }
     public static class Items {
 
+        public static final TagKey<Item> PC_PART = createTag("pc_part");
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(CuboidTechComputers.MODID, name));
         }

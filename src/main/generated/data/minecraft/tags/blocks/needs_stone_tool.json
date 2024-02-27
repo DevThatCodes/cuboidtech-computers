@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "cuboidtech-computers:mmd_checker",
+    "cuboidtech-computers:silicon_block",
+    "cuboidtech-computers:nesilicon_ore",
+    "cuboidtech-computers:ovsilicon_ore",
+    "cuboidtech-computers:ensilicon_ore",
+    "cuboidtech-computers:part_colorer"
+  ]
+}
