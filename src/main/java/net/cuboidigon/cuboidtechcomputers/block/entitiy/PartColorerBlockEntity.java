@@ -2,6 +2,7 @@ package net.cuboidigon.cuboidtechcomputers.block.entitiy;
 
 import net.cuboidigon.cuboidtechcomputers.CuboidTechComputers;
 import net.cuboidigon.cuboidtechcomputers.CuboidTechComputersClient;
+import net.cuboidigon.cuboidtechcomputers.item.custom.ColorablePart;
 import net.cuboidigon.cuboidtechcomputers.screen.PartColorerScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
@@ -79,8 +80,9 @@ public class PartColorerBlockEntity extends BlockEntity implements ExtendedScree
         }
 
         if(!this.getStack(COLOR_INPUT).isEmpty()) {
-            String color = String.valueOf(Objects.requireNonNull(this.getStack(COLOR_INPUT).getOrCreateNbt()).getString("color"));
+            String color = String.valueOf(Objects.requireNonNull(this.getStack(COLOR_INPUT).getNbt()).getString("color"));
             CuboidTechComputers.LOGGER.info(color);
+            ColorablePart.Color(getStack(PART_INPUT));
         }
     }
     private boolean canInsertItemIntoOutputSlot(Item item) {
