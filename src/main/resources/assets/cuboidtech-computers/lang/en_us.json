@@ -1,0 +1,25 @@
+{
+  "item.cuboidtech-computers.silica": "Silica",
+  "item.cuboidtech-computers.raw_silicon": "Raw Silicon",
+  "item.cuboidtech-computers.silicon_ingot": "Silicon Ingot",
+  "item.cuboidtech-computers.mmd": "MMD",
+  "item.cuboidtech-computers.gpu": "GPU",
+  "item.cuboidtech-computers.color_card": "Color Card",
+
+  "block.cuboidtech-computers.silicon_block": "Block of Silicon",
+  "block.cuboidtech-computers.mmd_checker": "MMD Explorer",
+  "block.cuboidtech-computers.ovsilicon_ore": "Silicon Engraved Stone",
+  "block.cuboidtech-computers.nesilicon_ore": "Silicon Engraved Netherack",
+  "block.cuboidtech-computers.ensilicon_ore": "Silicon Engraved Endstone",
+  "block.cuboidtech-computers.part_colorer": "Part Colorer",
+
+  "block.cuboidtech-computers.entity.part_colorer.display_name": "Part Colorer",
+
+  "message.cuboidtech-computers.mmdresultsucces": "Successfully detected click on MMD Explorer!",
+  "message.cuboidtech-computers.mmdresultfail": "Unsuccessfully detected click on MMD Explorer!",
+
+  "itemgroup.cuboidtech-computers.ctc_items": "CT:C Items",
+  "itemgroup.cuboidtech-computers.ctc_blocks": "CT:C Blocks",
+
+  "item.cuboidtech-computers.mmd.tooltip": "A mmd is a Multi-Media Drive which can store data"
+}

@@ -1,0 +1,7 @@
+// 1.20.2	2024-02-27T16:50:21.545393204	CuboidTech Computers/Block Loot Tables
+dd3a1b32b97c994f3b34741046fcf0cc8a0cce28 data/cuboidtech-computers/loot_tables/blocks/silicon_block.json
+424b31c806c641f052367745025a1c99f4be453e data/cuboidtech-computers/loot_tables/blocks/part_colorer.json
+2a1a0863b6ef276a3a7ebc8098b43049421d48e4 data/cuboidtech-computers/loot_tables/blocks/ensilicon_ore.json
+acd3b8b0c1344bff83fffead4af21ea791f886da data/cuboidtech-computers/loot_tables/blocks/ovsilicon_ore.json
+a8fdb25ab115cd4d05705761919c3ebeee4ed3da data/cuboidtech-computers/loot_tables/blocks/mmd_checker.json
+0c674fe5d8b670b0ab815395148fe93c782d30af data/cuboidtech-computers/loot_tables/blocks/nesilicon_ore.json
